@@ -1,0 +1,82 @@
+.todos{
+    padding: 20px;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom:  1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.todo:last-of-type{
+    border-bottom: 0;
+}
+
+.todo .index{
+    flex: 1 1 50px;
+}
+.todo .content{
+    flex: 1 1 100%;
+}
+
+.todo.done .content{
+    /* ticking a task done */
+    text-decoration: line-through;
+}
+
+.todo-input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.todo-submit{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #1c44b3;
+    border-radius: 20px;
+    color: #fff;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.delete{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #117930;
+    padding: 10px;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+.delete:hover{
+    background-color: #11793085;
+    cursor: pointer;
+}
+.todo-submit:disabled{
+    background-color:gray    ;
+}
+.warning{
+    background-color: red;
+    color: white;
+}
